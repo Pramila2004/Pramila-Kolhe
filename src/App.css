@@ -1,38 +1,404 @@
-.App {
+*{
+    margin: 0;
+    font-family: 'Roboto';
+    background-color: #121212; /* Dark theme background */
+    color: #f5f5f5; /* Light text color */
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+  
+  /* Navbar Styles */
+  .navbar-header {
+    background-color: #121212; /* Dark gray */
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+  }
+  
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold; 
+    color: #04DEAD;
+    text-shadow: #04DEAD;
+    font-family: cursive;
+    text-transform: uppercase;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar-link {
+    font-size: 1rem;
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #04DEAD; /* Highlight color on hover */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+
+
+  /* Main Page Styles */
+.main-page {
+    
+    margin-top:10rem ;
+    margin-bottom:10rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Dark background */
+    color: #f5f5f5; /* Light text */
+    
+  }
+  
+  /* Content Container */
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  /* Left Side: Text Content */
+  .text-content {
+    flex: 1;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #04DEAD; /* Accent color */
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .main-heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description p {
+    line-height: 1.6;
+    color: #f5f5f5;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    flex: 1;
+    text-align: justify;
+  }
+  
+  .cv-button {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    color: #121212;
+    background-color: #04DEAD;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cv-button:hover {
+    background-color: #04DEAD; /* Darker accent color */
+  }
+  
+  /* Right Side: Profile Photo */
+  .photo-container {
+    flex-shrink: 0;
+    text-align: center;
+
+
+  }
+  
+  .profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  
+    .text-content {
+      text-align: center;
+    }
+  
+    .profile-photo {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+
+  /* About Section Styles */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:  auto;
+    max-width: 900px;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #04DEAD;
+  }
+  
+  .about-content {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .about-content img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .about-info {
+    
+    font-size: 1.2rem;
+    text-align: justify;
+    flex: 1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-info {
+      text-align: center;
+    }
+  }
+  
+  
+  /* General Section Styling */
+  .education-section {
+    padding: 50px 20px;
+
+  }
+  
+  .education-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #04DEAD;
+
+  }
+  
+
+  .education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 800px;
+    margin: auto;
+  }
+  
+  .education-marker {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+
+
+  }
+  
+  .education-card {
+
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    flex-grow: 1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  .education-heading {
+    font-size: 1.8rem;
+    color: #04DEAD;
+    margin-bottom: 10px;
+  }
+  
+  .education-info {
+    font-size: 1rem;
+    color: #f5f5f5;
+  }
+  
+
+  
+  
+  /* Project Card Styling */
+  .project-card {
+    max-width: 400px; /* Increase width of the card */
+    background-color: #121212; /* Light background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+/* Image Styling */
+.project-image {
+    width: 100%;
+    height: 250px; /* Increased height for a better view of the image */
+    object-fit: fill; /* Ensures the image fills the area without distortion */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Title Styling */
+.project-title {
+    font-size: 1.5rem;
+    color: #f5f5f5; /* Dark text */
+    margin-bottom: 0.5rem;
+}
+
+/* Description Styling */
+.project-description {
+    font-size: 1rem;
+    color: #f5f5f5; /* Subtle text color */
+    margin-bottom: 0.5rem;
+}
+
+/* Technologies Styling */
+.project-technologies {
+    font-size: 1rem;
+    color: #04dead; /* Highlight color */
+    margin-bottom: 1rem;
+}
+
+/* Buttons Container */
+.project-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+/* Buttons Styling */
+.project-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-btn.demo-btn {
+    background-color: #04dead; /* Highlight color */
+    color: white;
+}
+
+.project-btn.demo-btn:hover {
+    background-color: #039c84; /* Darker highlight */
+}
+
+.project-btn.source-btn {
+    background-color: #333; /* Dark button */
+    color: white;
+}
+
+.project-btn.source-btn:hover {
+    background-color: #555; /* Lighter dark */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        max-width: 90%; /* Use full width for smaller screens */
+        margin: 1rem auto;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .project-btn {
+        width: 100%;
+    }
+}
+.contact-container {
   text-align: center;
+  padding: 2rem;
+  background-color: #121212; /* Dark background */
+  color: #fff; /* White text */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #04dead; /* Accent color */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.contact-links {
+  display: block;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-link {
+  font-size: 1.2rem;
+  color: #04dead;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #333; /* Dark background for links */
+  border-radius: 5px;
+
+  transition: background-color 0.3s, color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.contact-link a{
+  margin: 2rem;
+}
+
+.contact-link:hover {
+  background-color: #04dead; /* Light highlight on hover */
+  color: #121212; /* Dark text on hover */
 }
