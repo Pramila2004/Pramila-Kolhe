@@ -12,11 +12,11 @@ import Education from './components/Education';
 function App() {
   return (
     <div className="App">
-      <MyNavbar/>
+      <MyNavbar />
       <MainPage/>
-      <About/>
+      <About />
       <Education/>
-      <Skills/>
+      <Skills />
       <Projects/>
       <Contact/>
     

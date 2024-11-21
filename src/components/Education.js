@@ -3,7 +3,7 @@ import React from "react";
 
 const Education = (props) => {
   return (
-    <div className="education-section">
+    <div className="education-section education">
       <h1 className="education-title"> Education </h1>
       <div className="education-timeline">
       <div className="education-item">

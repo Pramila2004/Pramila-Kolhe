@@ -9,8 +9,8 @@ const ProjectCard=(props)=>{
       <p className="project-description">{props.description}</p>
       <h4 className="project-technologies">{props.technologies}</h4>
       <div className="project-buttons">
-        <button className="project-btn demo-btn">Demo</button>
-        <button className="project-btn source-btn">Source</button>
+        <button className="project-btn demo-btn"><a href="https://example.com/demo" className="project-btn demo-btn">Demo</a></button>
+        <button className="project-btn source-btn"><a href="https://example.com/source" className="project-btn source-btn">Source</a></button>
       </div>
     </div>
     )
