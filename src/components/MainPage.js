@@ -9,7 +9,7 @@ const MainPage = () => {
 
         {/* Left Side Content */}
         <div className="text-content">
-          <div className="subtitle">Software Developer</div>
+          <div className="subtitle">Web Developer</div>
           <div className="main-heading">
             <h1>Hello, I'm Pramila Kolhe</h1>
           </div>
@@ -22,7 +22,7 @@ const MainPage = () => {
             </p>
           </div>
           <div className="download-cv">
-            <a href="pdfs/CV.pdf" download="Pramila_Kolhe_CV.pdf" className="cv-button">
+            <a href="pdfs/Pramila_Kolhe_Resume.pdf" download="Pramila_Kolhe.pdf" className="cv-button">
               Download Resume
             </a>
           </div>
@@ -37,7 +37,7 @@ const MainPage = () => {
         {/* Right Side Profile Photo */}
         <div className="photo-container">
           <img
-            src="images-copy/profile.jpg"
+            src="images-copy/profile.png"
             alt="Pramila's Photo"
             className="profile-photo"
           />

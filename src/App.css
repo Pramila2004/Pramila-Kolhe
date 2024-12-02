@@ -163,14 +163,16 @@
   .photo-container {
     flex-shrink: 0;
     text-align: center;
+    position: relative; /* Add relative positioning */
+    top: -3rem; /* Adjust this value to move the image upwards */
   }
   
   .profile-photo {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    object-fit: cover; /* Ensures the image is well-contained */
   }
+  
   
   /* Responsive Design */
   
