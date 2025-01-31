@@ -1,7 +1,12 @@
 import React from "react";
+import About from "./About";
+import Education from "./Education";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const MainPage = () => {
   return (
+    <>
     <div className="main-page ">
       <div className="content-container">
 
@@ -42,12 +47,15 @@ const MainPage = () => {
             className="profile-photo"
           />
         </div>
-
-
-
         
       </div>
+      
     </div>
+    <About/>
+    <Education/>
+    <Projects/>
+    <Contact/>
+    </>
   );
 };
 

@@ -1,0 +1,131 @@
+
+/* Container */
+.project-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+/* Header */
+.project-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  color: #04dead;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+}
+
+/* Sections */
+.project-section {
+  margin-bottom: 30px;
+}
+
+.project-section h2 {
+  font-size: 1.8rem;
+  color: #04dead;
+  border-bottom: 2px solid #04dead;
+  padding-bottom: 5px;
+}
+
+/* Features List */
+.features-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features-list li {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+/* Technologies List */
+.tech-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tech-list li {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+/* Screenshots */
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.screenshots img {
+  width: 48%;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 15px;
+  /* background-color: #04dead; */
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  transition: 0.3s;
+  width: max-content;
+  border: 1px solid #04dead;
+  margin: 1rem;
+}
+
+.btn:hover {
+  background-color: #04dead;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .project-header h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .screenshots img {
+    width: 100%;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+  }
+
+  .btn {
+    width: 80%;
+    text-align: center;
+  }
+}
