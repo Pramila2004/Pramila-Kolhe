@@ -37,7 +37,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="project-card">
-                <img className="project-image" src='images-copy\backedArtifact\baked-artifact.png' alt='' />
+                <img className="project-image" src='images-copy\backedArtifact\home.png' alt='' />
                 <h3 className="project-title">Backed Artifacts Cake shop website</h3>
                 <p className="project-description">Our cake shop website lets customers browse, and order delicious cakes online. Celebrate every occasion with a sweet treat! 🎂🎉</p>
                 <h4 className="project-technologies"> HTML, CSS, JS ,Django </h4>
