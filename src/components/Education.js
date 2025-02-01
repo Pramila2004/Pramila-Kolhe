@@ -16,6 +16,8 @@ const Education = (props) => {
             </p>
             <p className="education-info">
               <strong>Result:</strong> SE = 9.39
+              <br />
+              TE = 9.43
             </p>
           </div>
         </div>
