@@ -8,6 +8,20 @@ const Projects = () => {
                 <h1>Projects</h1>
             </div>
             <div className="pro">
+                
+             <div className="project-card">
+                <img className="project-image" src='images-copy/Ai-Trip-Planner/1.png' alt='' />
+                <h3 className="project-title">AI Trip Planner</h3>
+                <p className="project-description">AI Trip Planner is a smart full-stack travel app that generates day-wise itineraries with hotel suggestions using the Gemini API. Users can view activities on an interactive map, save trips, and access them anytime. 📍✈️</p>
+                <h4 className="project-technologies"> HTML,Tailwind CSS, JS, React, Express, Node, MongoDB</h4>
+                <div className="project-buttons">
+                <a href="/project5">
+                    <button className="project-btn demo-btn">
+                    Learn more
+                    </button>
+                </a>
+                </div>
+            </div>
 
             <div className="project-card">
                 <img className="project-image" src='images-copy/rasoiDiries/rasoi-diries-home.png' alt='' />
@@ -60,6 +74,7 @@ const Projects = () => {
                 </a>
                 </div>
             </div>
+            
             </div>
 
         </div>
