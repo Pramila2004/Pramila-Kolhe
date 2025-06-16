@@ -28,7 +28,7 @@ const MainPage = () => {
             </p>
           </div>
           <div className="download-cv">
-            <a href="pdfs/Pramila_Kolhe_Resume.pdf" download="Pramila_Kolhe.pdf" className="cv-button">
+            <a href="pdfs/Pramila_Kolhe.pdf" download="Pramila_Kolhe.pdf" className="cv-button">
               Download Resume
             </a>
           </div>
