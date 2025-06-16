@@ -23,7 +23,7 @@ const Skills = () => {
         <img src="images-copy/js_logo.png" alt="JavaScript" />
         <img src="images-copy/mysql_logo.png" alt="MySQL" />
         <img src="images-copy/git_logo.png" alt="MySQL" />
-        <img src="images-copy/django.png" alt="Django" />
+
       </div>
     </div>
   );
