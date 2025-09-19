@@ -3,7 +3,6 @@ This portfolio is designed to reflect my professional journey. It includes secti
 - 👩‍💻 **About Me** – Quick intro and education background.  
 - 🛠️ **Skills** – Technical skills including frontend, backend, and tools.  
 - 🚀 **Projects** – Showcasing my work like SkillConnect, AI Trip Planner, and Rasoi Diaries.  
-- 📜 **Certifications** – Verified certificates and achievements.  
 - 📬 **Contact** – Easy ways to reach me.  
 
 ---
